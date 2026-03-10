@@ -1,0 +1,65 @@
+ping 192.168.148.1
+
+→ ping local gateway
+
+ping 103.123.226.154
+
+→ ping public IP
+
+ping -t 192.168.0.1
+
+continuous ping (stop: Ctrl+C) ←
+
+←
+
+ping -a 108.170.248.161
+
+resolve IP to hostname
+
+ping -n 4 facebook.com
+
+send 4 pings to domain
+
+ping -4 108.170.248.161
+
+← force IPv4
+
+←
+
+ipconfig
+
+view IP/subnet/gateway
+
+netstat
+
+show active connections ←
+
+netstat -a
+
+all connections + listening ports ←
+
+netstat -t
+
+TCP connections only ←
+
+netstat -b
+
+show program using connection ←
+
+агр -а
+
+← show ARP table
+
+←
+
+arp -v
+
+← verbose mode
+
+arp -s [IP] [MAC]
+
+← add static ARP entry
+
+arp -d *
+
+← delete all ARP entries
