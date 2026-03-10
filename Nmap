@@ -1,0 +1,59 @@
+nmap 192.168.1.1
+
+basic scan
+
+nmap 192.168.1.1-100
+
+→ scan IP range
+
+nmap -sV 192.168.1.1
+
+→ service/version detection
+
+nmap -0 192.168.1.1
+
+OS detection
+
+nmap -A 192.168.1.1
+
+→ aggressive scan (OS+version+script+traceroute)
+
+nmap -p 22,80 192.168.1.1
+
+→ scan specific ports
+
+nmap -sS 192.168.1.1
+
+SYN (stealth) scan
+
+nmap -sF 192.168.1.10
+
+FIN scan
+
+nmap -sX 192.168.1.1
+
+← XMAS scan
+
+nmap -sN 192.168.1.1
+
+NULL scan
+
+nmap -sT 192.168.1.1
+
+→ TCP connect scan
+
+nmap -sU 192.168.1.1
+
+UDP scan
+
+nmap --script vuln scanme.org
+
+→ vulnerability detection
+
+nmap -sn scanme.org
+
+→ ping scan (host discovery)
+
+nmap ip -oN sample.txt
+
+→ save results to file
